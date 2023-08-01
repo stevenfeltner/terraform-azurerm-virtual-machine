@@ -252,9 +252,9 @@ variable "linux_distribution_list" {
     },
 
     ubuntu2004-gen2 = {
-      publisher = "Canonical"
-      offer     = "0001-com-ubuntu-server-focal-daily"
-      sku       = "20_04-daily-lts-gen2"
+      publisher = "canonical"
+      offer     = "0001-com-ubuntu-server-focal"
+      sku       = "20_04-lts-gen2"
       version   = "latest"
     },
 
