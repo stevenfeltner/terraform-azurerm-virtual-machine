@@ -261,13 +261,14 @@ resource "azurerm_linux_virtual_machine" "linux_vm" {
 
   lifecycle {
     ignore_changes = [
-      tags,
+      tags, secure_boot_enabled, vtpm_enabled, identity]
+  }
     ]
   }
 }
 
 #---------------------------------------
-# Windows Virutal machine
+# Windows Virtual machine
 #---------------------------------------
 resource "azurerm_windows_virtual_machine" "win_vm" {
   count                        = var.os_flavor == "windows" ? var.instances_count : 0
