@@ -261,7 +261,7 @@ resource "azurerm_linux_virtual_machine" "linux_vm" {
 
   lifecycle {
     ignore_changes = [
-      tags, secure_boot_enabled, vtpm_enabled, identity]
+      tags,]
   }
     ]
   }
